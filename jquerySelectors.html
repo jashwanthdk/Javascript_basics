@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuerySelectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Selectors up jQuery</h2>
+    <p>This is present outside.</p>
+    <div id="firstdiv" class="mydiv">
+        <p>This is first para in firstdiv</p>
+        <p>This is second para in firstdiv</p>
+    </div>
+    <div id="seconddiv" class="mydiv">
+        <p>This is third para in seconddiv</p>
+    </div>
+    <div id="thirddiv" class="mydiv">
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+        </ul>
+    </div>
+    <button onclick="fn1()" id="btn1">Click Me</button>
+</body>
+<script src="jquery.js" type="text/javascript"></script>
+<script>
+    function fn1(){
+        // $("#firstdiv,p,.mydiv").fadeToggle();
+        // "#firstdiv,p" meant the whole firstdiv 
+        // and the para of the second div
+
+        // $("div>p").fadeToggle(1000);
+        // div>p ; div = parent ; p = child.
+        //the func is applied on the child 
+        // within the parent
+
+        // $("p:first").fadeToggle(1000);
+        // toggles only the first element in the paragraph
+
+        // $(".mydiv:first").fadeToggle(1000);
+        // where the first division gets toggledout
+
+        $(".mydiv:even").fadeToggle(1000);
+        $("li:even").fadeToggle(1000);
+    }
+</script>
+</html>
+
+<!-- Selecting headers $("h1") -->
+<!-- Selecting by classname $(".class") -->
+<!-- Selecting by id $("#id1") -->
+
+
+<!-- We can even link a stylesheet using.
+<link rel="stylesheet" href="cssFileName.css" >
+ -->

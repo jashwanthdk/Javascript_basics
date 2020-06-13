@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script type = "text/javascript">
+
+        // var Car = {
+        //     carbrand : "tesla",
+        //     carmodel : "model 3",
+        //     price : 350000,
+
+        //     teslaAutoPilot : function()
+        //     {
+        //         document.write("<h2>This car has auto pilot</h2>");
+        //     }
+        // }
+
+        // document.write("<h2>"+Car.carbrand+"</h2>");
+        // document.write("<h2>" +Car.carmodel + "</h2>");
+        // Car.teslaAutoPilot();
+
+        function Cars(carbrand,carmodel,price)
+        {
+            this.car_brand = carbrand;
+            this.car_model = carmodel;
+            this.price = price;
+            this.teslaAutoPilot = function()
+            {
+                document.write("<h2>This car has auto pilot</h2>");
+           }
+        }
+
+        var c1 = new Cars("Tesla","Model3",40000);
+        var c2 = new Cars("pesla","odel3",60000);
+
+        document.write(c1.car_brand);
+        document.write(c2.price);
+        c2.teslaAutoPilot();// using c1 printing the func
+
+    </script>
+    
+</body>
+</html>

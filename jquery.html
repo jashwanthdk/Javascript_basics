@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set up jQuery</title>
+</head>
+<body>
+    <h2 id="heading1">Setting up jQuery</h2>
+    <button onclick="fn1()" id="btn1">Click me</button>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="
+    sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=
+    "crossorigin="anonymous"></script>
+    <!-- <script src="jquery.js"></script> -->
+    <script>
+        function fn1()
+        {
+            $("#heading1").fadeToggle(5000);
+        }
+    </script>
+</body>
+</html>

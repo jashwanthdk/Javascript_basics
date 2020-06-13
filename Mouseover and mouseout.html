@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseOver&MouseOut</title>
+    <script type="text/javascript">
+
+    function setNewImg(){
+        document.getElementById("img1").src="icons8-apple-logo-50 (1).png";
+    }
+
+    function setOldImg(){
+        document.getElementById("img1").src="icons8-apple-logo-50.png";
+    }
+
+    </script>
+</head>
+<body>
+    <img id="img1" onmouseover="setNewImg()" onmouseout="setOldImg()"
+     src="icons8-apple-logo-50.png">
+</body>
+</html>

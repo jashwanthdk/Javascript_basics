@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Validation</title>
+    <script type="text/javascript">
+    /*
+        \d - match any digit(equalto[0-9])
+        \w - match any word character(a-z,A-Z,0-9 & _)
+        \s - match whitespace character (eg- spaces & tabs)
+        \t - match a tab only
+    */
+        function validate(){
+            var text = document.getElementById("text1").value;
+            var regx = /^[7-9]\d{9}$/;
+            //var regx = /^[7-9][0-9]{9}$/;
+            // carrot symbol ^[7-9] --> should start with those numbers in range of 7 upto 9
+            // carrot symbol [^7-9] --> should not start with those numbers 7,8,9
+            // $ symbol marks the end.
+            if(regx.test(text))
+            {
+                document.getElementById("lbltext").innerHTML="Valid";
+                document.getElementById("lbltext").style.visibility="visible";
+                document.getElementById("lbltext").style.color="green";
+            }
+            else
+            {
+                document.getElementById("lbltext").innerHTML="InValid";
+                document.getElementById("lbltext").style.visibility="visible";
+                document.getElementById("lbltext").style.color="red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input id="text1" placeholder="Cellphone" type="text"/><br>
+        <label id="lbltext" style="color:red; visibility:hidden">Invalid</label>
+        <br>
+        <button onclick="validate()"type="button">Submit</button>
+    </form>
+</body>
+</html>

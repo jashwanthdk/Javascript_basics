@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementByTagName</title>
+    
+</head>
+<body >
+    <div id="bdy">
+    <p>This is a paragraph 1</p>
+    <p>This is a paragraph 2</p>
+    <p>This is a paragraph 3</p>
+    <p>This is a paragraph 4</p>
+    <p>This is a paragraph 5</p>
+    </div>
+    <br>
+    <button onclick="myFunction()">Click Me</button>
+
+    <script>
+        function myFunction(){
+        var para = document.getElementById("bdy");
+        para.getElementsByTagName("p")[1].style.backgroundColor="red";
+    }
+    </script>
+</body>
+
+</html>

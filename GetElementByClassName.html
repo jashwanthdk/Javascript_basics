@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementByClassName</title>
+
+    <script type="text/javascript">
+        function changeStyling(){
+            var element = document.getElementsByClassName("mypara");
+            for(var x=0; x<element.length; x++)
+            {
+                element[x].style.color="red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p class="mypara">This is paragraph1.</p>
+    <p>This is paragraph2</p>
+    <p class="mypara">This is paragraph3.</p>
+    <p>This is paragraph4.</p>
+    <p class="mypara">This is paragraph5.</p>
+    <a class="mypara" href="#">This is an anchor tag</a>
+    <br>
+    <button onclick="changeStyling()">Click me</button>
+</body>
+</html>

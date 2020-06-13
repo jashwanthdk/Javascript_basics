@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome dev tools</title>
+    <script type="text/javascript">
+        function AddValue()
+        {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            document.getElementById("op").innerHTML="Result = "+(a+b);
+            //a and b gets concatenated not added.
+        }
+    </script>
+</head>
+<body>
+    <input id="t1" type="text" placeholder="Text 1"/>
+    <br><br>
+    <input id="t2" type="text" placeholder="Text 2"/>
+    <br><br>
+    <button onclick="AddValue()" id="btnAdd">Add</button>
+    <h2 id="op">Result = </h2>
+</body>
+</html>

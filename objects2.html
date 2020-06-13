@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects2</title>
+
+    <script type="text/javascript">
+        var str1 = new String();
+        document.write(typeof(str1));
+
+        var a =5;
+        document.write(typeof(a));
+
+        var s = "Str";
+        document.write(typeof(s));
+
+        var Car = {name:"tesla",model:"M203",price:140000}
+        document.write(Car.name);
+
+        Car.type = "Petrol";
+
+        document.write(Car.name+Car.type);
+
+        delete Car.price;
+        document.write(Car.price);
+        //we get undefined
+
+        Car.funcname = function(){
+            document.write("Added Function");
+        }
+
+        Car.funcname();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
